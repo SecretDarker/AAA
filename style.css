@@ -1,0 +1,25 @@
+.example1 {
+    font-size: large;
+}
+.example1::after{
+    position: absolute;
+    content: '-->';
+    transition-property: transform;
+}
+.example1:hover::after{
+    transform: translateX(5px);
+    transition-duration: 1s;
+    color: rgb(220, 20, 60);
+}
+.example2{
+    font-size: large;
+}
+.example2::after{
+    position: absolute;
+    content: '';
+    background: url('../img/square-regular.svg') no-repeat;
+    width: 25px;
+    height: 25px;
+    color: black;
+    font-weight: 900;
+}
